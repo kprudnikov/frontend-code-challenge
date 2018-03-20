@@ -1,0 +1,85 @@
+@import 'variables.scss';
+
+.adElement {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+
+    .head {
+        position: relative;
+        padding-bottom: 66.66%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: space-between;
+        box-sizing: border-box;
+        min-height: 220px;
+        padding: 40px;
+        border: 1px solid $border-color;
+        border-top: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .descriptionTop {
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        & > .title {
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 16px;
+            line-height: 1.25;
+        }
+
+        & > address {
+            margin-bottom: 16px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 80%;
+            color: $color-dim;
+            letter-spacing: 0.7px;
+        }
+    }
+
+    .descriptionBottom {
+        display: flex;
+        justify-content: space-between;
+
+        .price {
+            padding: 6px 0;
+        }
+
+        .rooms {
+            display: inline-block;
+            padding: 6px 8px 6px 0;
+            border-right: 1px solid $border-color;
+            font-weight: lighter;
+            color: #5d5d5d;
+        }
+
+        .space {
+            display: inline-block;
+            padding: 6px 0 6px 8px;
+            font-weight: lighter;
+            color: #5d5d5d;
+        }
+
+        & > span:first-child:last-child {
+            width: 100%;
+            text-align: right;
+        }
+    }
+
+    .rentalLabel {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+}

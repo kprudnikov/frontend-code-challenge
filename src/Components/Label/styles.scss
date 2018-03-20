@@ -1,0 +1,13 @@
+@import 'variables.scss';
+
+.rentalLabel {
+    display: table;
+    color: $color-dim;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: $backgroundPrimary;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}

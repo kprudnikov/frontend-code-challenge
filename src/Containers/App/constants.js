@@ -1,0 +1,6 @@
+export const SET_LOADER = 'App/SET_LOADER';
+
+export const LOAD_ADS_LIST_SEND = 'App/LOAD_ADS_LIST_SEND';
+export const LOAD_ADS_LIST_SUCCESS = 'App/LOAD_ADS_LIST_SUCCESS';
+
+export const SET_ERROR_MESSAGE = 'App/SET_ERROR_MESSAGE';

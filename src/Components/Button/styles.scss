@@ -1,0 +1,28 @@
+@import 'variables.scss';
+
+.button {
+    display: table;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgb(0, 188, 212);
+    border: none;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+    user-select: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgb(255, 255, 255);
+
+    &:hover {
+        background-color: lighten(rgb(0, 188, 212), 5%);
+    }
+
+    &:active {
+        background-color: lighten(rgb(0, 188, 212), 10%);
+    }
+}
