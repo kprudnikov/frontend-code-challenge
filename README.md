@@ -1,49 +1,14 @@
-# Front-End Interview Test
+### How to setup:
+1. npm i
+2. npm start
+3. open localhost:8080
 
-This is a simple front-end code challenge created to serve two purposes:
+### How to test
+        npm test
 
-1. Show off your skills,
-1. Give us a better understanding of your skills.
-
-## The Task
-
-The programming challenge exists in 2 parts:
-* Part A: HTML + CSS
-* Part B: Javascript
-
-### PART A: HTML + CSS
-
-![Screen](https://raw.githubusercontent.com/mcmakler/frontend-code-challenge/master/assets/fe_test_example_screen.png)
-
-* Create a layout based on the given screen (fe_test_example_screen.png).
-* Style the layout consistently and beautifully, adhering as closely to the design as possible.
-* **NOTE:** You are free to use any preprocessor you wish, or write raw CSS. *Bonus points for an explanation of your choice.*
-
-### PART B: Javascript
-
-* Consume our public API @ https://api.mcmakler.de/v1/advertisements to retrieve a list of advertisements of vacant apartments.
-* Display the first 10 advertisements in the HTML + CSS layout created in step A, sticking to the layout, placing data where it fits.
-* **NOTE:** You are free to use any framework you wish, or do it VanillaJS style. *Brief explanation of your choice.*
-
-## Additional Instructions
-
-* Fork this repository
-* After you're done, provide us the link to your repository.
-* Leave comments where you were not sure how to properly proceed.
-* Implementations without a README will be automatically rejected.
-* No pull requests
-* ES6 and above
-
-## Bonus Points
-
-* Tests
-* Clean code!
-* Knowledge of application flow.
-* Knowledge of modern best practices/coding patterns.
-* Demonstration of good state management.
-* Usage of frameworks/supersets.
-* Pixel perfection.
-* Componential thinking.
-* Usage of linters.
-* Git hooks.
-* Usage of Material Design concepts
+#### Not sure how to properly proceed:
+1. Relative position of text elements (each line can be of an arbitrary length,
+so I assumed that the upper lines stuck to the top and the uppermost line can push the lower one, while the lowermost is stuck to the bottom)
+2. "ad 35m^2" - applicable only when multiple apartments are rented or sold, when there's one we can show the exact area, so I omitted 'ab'.
+3. Material design guidelines state elements should be aligned to 8px grid, but since I had only a png as a reference, you can see some deviations from this rule.
+4. It seems that https://api.mcmakler.de/v1 doesn't have CORS enabled, so I had to setup a parallel process, which might not work properly on Windows. In this case stop the process and run **npm run serve** and **npm run start.api** separately.
