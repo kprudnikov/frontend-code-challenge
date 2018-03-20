@@ -1,4 +1,4 @@
 {
-  "presets": "babel-preset-env",
-  "plugins": ["syntax-async-functions"]
+  "presets": ["babel-preset-env", "es2015", "stage-0"],
+  "plugins": ["syntax-async-functions", "transform-react-jsx"]
 }
