@@ -10,7 +10,8 @@
     "start": "npm run start.api | npm run serve",
     "serve": "webpack-dev-server ./src",
     "start.api": "node ./server",
-    "prepush": "npm run lint",
+    "precommit": "npm run lint",
+    "prepush": "npm test",
     "pretest": "npm run lint",
     "lint": "eslint -- .",
     "test": "jest"
@@ -41,6 +42,7 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^2.28.0",
+    "husky": "^0.14.3",
     "jest": "^22.4.0",
     "jsdom": "^11.6.2",
     "karma": "^2.0.0",
